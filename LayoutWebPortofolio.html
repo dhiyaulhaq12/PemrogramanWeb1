@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                         "resume-pengalaman tentang-diri"
+                         "resume-pengalaman data-diri"
+                         "work-samples work-samples";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: #0077cc0;
+}
+
+#tentang-diri {
+    grid-area: tentang-diri;
+    background-color: #d0d0d0;
+}
+
+#resume-pengalaman {
+    grid-area: resume-pengalaman;
+    background-color: #d0d0d0;
+}
+
+#data-diri {
+    grid-area: data-diri;
+    background-color: #d0d0d0;
+}
+
+#work-samples {
+    grid-area: work-samples;
+    background-color: #d0d0d0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #000000;
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: marquee 5s linear infinite; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.work-sample {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    </style>
+    <header>
+        <h1>Muhammad Dhiya Ulhaq</h1>
+        <img src="gambar1.jpg" alt="Foto Anda">
+    </header>
+
+    <section id="tentang-diri">
+        <h2>Tentang Diri</h2>
+        <p>Saya adalah Mahasiswa Politeknik Harapan Bersama prodi D4 Teknik Informatika</p>
+    </section>
+
+    <section id="resume-pengalaman">
+        <h2>Resume Pengalaman</h2>
+        <ul>
+            <li> Membuat Website MAN Kota Tegal (E-Learning)</li>
+            <li>Meriview Handphone Xiaomi Redmi Note 8</li>
+        </ul>
+    </section>
+
+    <section id="data-diri">
+        <h2>Data Diri</h2>
+        <ul>
+            <li>dhiyulhaq12@gmail.com</li>
+            <li>Instagram: <a href="https://www.instagram.com/dhiyulhaq_/">dhiyulhaq_</a></li>
+            <li></li>
+           
+        </ul>
+    </section>
+
+    <section id="work-samples">
+        <h2>Work Samples</h2>
+        <div class="work-sample">
+            <li>Website E-Learning MAN Kota Tegal: <a href="https://youtu.be/bVG-s9oz9PI">VIDEO PENJELASAN WEB PROJECT E-LEARNING MOODLE</a></li>
+        </div>
+        <div class="work-sample">
+            <li>Meriview HP: <a href="https://youtu.be/NUHaoF2a8FU">REVIEW XIAOMI REDMI NOTE 8</a></li>
+        </div>
+    </section>
+</body>
+</html>
